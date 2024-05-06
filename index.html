@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="return validateForm()" action="backend.php" method="post" class="registration-form">
+            <h2>Registration</h2>
+            <h3>Personal Details</h3>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile">
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" name="gender">
+                <label for="occupation">Occupation:</label>
+                <input type="text" id="occupation" name="occupation">
+            </div>
+            <h3>Identity Details</h3>
+            <div class="form-group">
+                <label for="id-type">ID Type:</label>
+                <input type="text" id="id-type" name="id-type">
+                <label for="id-number">ID Number:</label>
+                <input type="text" id="id-number" name="id-number">
+                <label for="issue-authority">Issue Authority:</label>
+                <input type="text" id="issue-authority" name="issue-authority">
+            </div>
+            <div class="form-group">
+                <label for="issue-date">Issue Date:</label>
+                <input type="date" id="issue-date" name="issue-date">
+                <label for="issue-state">Issue State:</label>
+                <input type="text" id="issue-state" name="issue-state">
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="date" id="expiry-date" name="expiry-date">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="validateForm.js"></script>
+</body>
+</html>
